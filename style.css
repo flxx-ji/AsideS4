@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: whitesmoke;
+  font-family: sans-serif;
+  font-weight: 400;
+  padding: 30px;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: sans-serif;
+  height: 95vh;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(92, 178, 217, 0.7)), to(rgba(245, 235, 245, 0.7))), url(images/pexels-ethan-brooke-.jpg);
+  background-image: linear-gradient(to right bottom, rgba(92, 178, 217, 0.7), rgba(245, 235, 245, 0.7)), url(images/pexels-ethan-brooke-.jpg);
+  background-size: cover;
+  background-position: top;
+  -webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+          clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+}
+
+h1 {
+  font-size: 3rem;
+  letter-spacing: 1rem;
+  color: whitesmoke;
+  position: absolute;
+  top: 40%;
+  left: 53%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+.form {
+  width: 50%;
+  position: relative;
+  top: 45%;
+  left: 3%;
+  height: 50px;
+  overflow: hidden;
+  background: transparent;
+}
+
+.form input {
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  color: whitesmoke;
+  padding-top: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: sans-serif;
+  border: none;
+  outline: none;
+}
+
+.form label {
+  position: absolute;
+  bottom: 0px;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid black;
+}
+
+.form label::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: -1px;
+  height: 100%;
+  width: 100%;
+  border-bottom: 3px solid whitesmoke;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+.content_name {
+  position: absolute;
+  bottom: 5px;
+  left: 0px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.form input:focus + .label_name .content_name,
+.form input:valid + .label_name .content_name {
+  -webkit-transform: translateY(-125%);
+          transform: translateY(-125%);
+  font-size: 18px;
+  color: whitesmoke;
+}
+
+.form input:focus + .label_name::after,
+.form input:valid + .label_name::after {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+.form2 {
+  width: 50%;
+  position: relative;
+  top: 48%;
+  left: 3%;
+  height: 50px;
+  overflow: hidden;
+  background: transparent;
+}
+
+.form2 input {
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  color: whitesmoke;
+  padding-top: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: sans-serif;
+  border: none;
+  outline: none;
+}
+
+.form2 label {
+  position: absolute;
+  bottom: 0px;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid black;
+}
+
+.form2 label::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: -1px;
+  height: 100%;
+  width: 100%;
+  border-bottom: 3px solid whitesmoke;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+.content_name2 {
+  position: absolute;
+  bottom: 5px;
+  left: 0px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.form2 input:focus + .label_name2 .content_name2,
+.form2 input:valid + .label_name2 .content_name2 {
+  -webkit-transform: translateY(-125%);
+          transform: translateY(-125%);
+  font-size: 18px;
+  color: whitesmoke;
+}
+
+.form2 input:focus + .label_name2::after,
+.form2 input:valid + .label_name2::after {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
